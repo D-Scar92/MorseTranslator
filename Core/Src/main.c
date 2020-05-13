@@ -167,12 +167,13 @@ int main(void)
 	  if(error_flag){
 		  error_handler();
 	  }
-	  if(HAL_GPIO_ReadPin(USER_INPUT_GPIO_Port, USER_INPUT_Pin)){
-		  input_handler();
-	  }
 	  if(display_flag){
 		  anode_handler();
 	  }
+	  if(HAL_GPIO_ReadPin(USER_INPUT_GPIO_Port, USER_INPUT_Pin)){
+		  input_handler();
+	  }
+
   }
 
 
